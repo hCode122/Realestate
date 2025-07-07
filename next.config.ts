@@ -14,6 +14,16 @@ const nextConfig: NextConfig = {
   },
     typescript: { ignoreBuildErrors: true },
   eslint: { ignoreDuringBuilds: true },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/en/landing',
+        permanent: true, // HTTP 308 permanent redirect
+      },
+    ]
+  },
+
 
 }
 
