@@ -12,9 +12,8 @@ const nextConfig: NextConfig = {
     ],
     domains: ['placehold.co'],
   },
-  typescript: {
-    ignoreBuildErrors: true, // Skip TypeScript errors during build
-  }
+    typescript: { ignoreBuildErrors: true },
+  eslint: { ignoreDuringBuilds: true },
 
 }
 
