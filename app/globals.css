@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-lato);
+  --font-mono: var(--font-playfair);
+
+  --color-tertiary: #22c55e;
+  --color-primary: #1c241d;
+  --color-secondary: #fff
+}
+
+@layer components {
+  .h2 {
+    @apply font-[600] text-[2.5rem];
+  }
+
+  .border-animation {
+    @apply before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:bg-[linear-gradient(90deg,_transparent,_#22c55e,_transparent)] before:bg-[length:200%_100%] before:animate-[gradient_2s_linear_infinite]
+
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: -100% 0; }
+  100% { background-position: 100% 0; }
+}
+
+:root {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+  background-color: var(--color-secondary);
+}
+

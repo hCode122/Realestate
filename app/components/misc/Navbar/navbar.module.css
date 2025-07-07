@@ -1,0 +1,35 @@
+.logoColor {
+    filter: invert(1) brightness(1);
+}
+
+.linkAnimation {
+    transition: 0.1s linear;
+    border-bottom: none;
+    padding: 0;
+}
+
+.linkAnimation:hover {
+    border-bottom: solid 3px;
+    border-color: #22c55e;
+    padding-bottom: 10px;
+
+}
+
+.blurNav {
+    backdrop-filter: blur(10px);
+    opacity: 95%;
+}
+
+.blurNav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: #ffffff;
+    background: linear-gradient(151deg,rgba(255, 255, 255, 0.28) 0%, rgba(28, 36, 29, 1) 76%);
+    transition: 0.2s;
+}
+
+
